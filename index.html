@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Митякин Никита 25ВП3 вариант 8 -->
+<html>
+    <head lang="ru">
+        <meta charset="UTF-8">
+        <link rel="icon"
+            href="#"
+        />
+        <link rel="stylesheet"
+            text="text/css"
+            href="./CSS/CSS.css"
+        />
+        <title>
+            Вычислитель площадей и периметров 2D фигур
+        </title>
+    </head>
+    <body>
+        <div align="center">
+            Митякин Никита 25ВП3 вариант 8
+        </div>
+        <div align="center">
+            Расчет площади и периметра различных двухмерных фигур
+            (результат расчета выводить в таблицу)
+        </div>
+        <h1>
+            Калькулятор площади и периметра
+        </h1>
+        <div class="calculator">
+            <form id="calcForm">
+                <div class="form-group">
+                    <label>
+                        Выберите фигуру:
+                    </label>
+                    <select id="Select">
+                        <option value="square">
+                            Квадрат
+                        </option>
+                        <option value="rectangle">
+                            Прямоугольник
+                        </option>
+                        <option value="circle">
+                            Круг
+                        </option>
+                        <option value="triangle">
+                            Треугольник (по трём сторонам)
+                        </option>
+                    </select>
+                </div>
+                <div id="paramsContainer">
+                </div>
+                <button type="button" id="calculateBtn">
+                    Рассчитать
+                </button>
+                <button type="button" id="clearBtn">
+                    Очистить таблицу
+                </button>
+                <div id="message">
+                </div>
+            </form>
+        </div>
+        <div class="history-header">
+            <h2>
+                Результаты
+            </h2>
+        </div>
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>
+                        Фигура
+                    </th>
+                    <th>
+                        Параметры
+                    </th>
+                    <th>
+                        Площадь
+                    </th>
+                    <th>
+                        Периметр
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+        <script src="./JS/JS.js">
+        </script> 
+    </body>
+</html>
